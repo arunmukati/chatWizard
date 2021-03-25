@@ -103,7 +103,9 @@ function loadOldChats() {
         console.log("redausarte", xhr.status);
         if (xhr.readyState == 4 && xhr.status == 200) {
             const json = JSON.parse(xhr.responseText);
-            showOldChats(json.data.chats);
+            if(json.data){
+                showOldChats(json.data['chats']);
+            }
         }
     };
     xhr.send();
