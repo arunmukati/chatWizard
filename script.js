@@ -1,4 +1,4 @@
-let baseURL = 'http://localhost:3001/'
+let baseURL = 'https://chat-bot-backend-arun.herokuapp.com/'
 let chatWrap = document.getElementById('chat-wrap');
 let sendText = document.getElementById("sendText");
 let chatBody = document.getElementById('chatBody');
